@@ -1,0 +1,116 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 23px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $body-background-color;
+  border-bottom: 1px solid $cornflower-color;
+}
+
+.header-container {
+  display: flex;
+}
+
+/* =============== LOGO =============== */
+.logo-part-one {
+  color: $iris-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.logo-part-two-header {
+  color: $navy-blue-color;
+}
+
+/* =============== LOGO =============== */
+
+/* =============== NAVIGATION =============== */
+.nav-link {
+  font-weight: 500;
+  color: $navy-blue-color;
+  position: relative;
+  transition: color $hover-transition;
+}
+
+.nav-link-active {
+  color: $ocean-color;
+}
+
+.nav-link::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $ocean-color;
+  pointer-events: none;
+  transition: background-color $hover-transition;
+}
+
+.nav-link:not(.nav-link-active)::after {
+  background-color: transparent;
+}
+
+.nav-link:not(.nav-link-active):hover::after,
+.nav-link:not(.nav-link-active):focus::after {
+  background-color: $ocean-color;
+  transition: background-color $hover-transition;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation-list {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .header {
+    padding-bottom: 9px;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation-list {
+    margin-left: 123px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-bottom: 23px;
+  }
+
+  .contact-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+}
+/* =============== CONTACTS =============== */

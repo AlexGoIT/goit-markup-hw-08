@@ -1,0 +1,66 @@
+/* ================= CUSTOMERS SECTION ================== */
+.customer-list {
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 16px;
+}
+
+.customer-link {
+  width: 190px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $light-slate-color;
+  border: 1px solid $light-slate-color;
+  border-radius: 4px;
+  transition: border-color $hover-transition;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: $ocean-color;
+}
+
+.customer-icon {
+  width: 110px;
+  height: 56px;
+  transition: fill $hover-transition;
+}
+
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  fill: $ocean-color;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-list {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .customer-link {
+    width: 168px;
+    height: 88px;
+  }
+
+  .customer-icon {
+    width: 104px;
+    height: 56px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .customer-list {
+    width: 100%;
+  }
+
+  .customer-list {
+    gap: 24px;
+  }
+}
+
+/* ================= CUSTOMERS SECTION ================== */

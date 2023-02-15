@@ -1,0 +1,71 @@
+/* =============== FEATURES SECTION =============== */
+.features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.features-card-items {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .thumb {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-card-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .features-card-item {
+    width: 356px;
+  }
+
+  .feature-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-card-items {
+    gap: 24px;
+  }
+
+  .thumb {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $cloud-color;
+    border-radius: 4px;
+  }
+
+  .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .features-card-item {
+    max-width: 264px;
+  }
+}
+
+/* =============== FEATURES SECTION =============== */

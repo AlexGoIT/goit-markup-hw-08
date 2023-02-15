@@ -1,0 +1,100 @@
+/* =============== HERO SECTION =============== */
+
+.hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $navy-blue-color;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url('../images/hero/people-office-mobile.jpg');
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: $body-background-color;
+}
+
+.hero-btn {
+  min-width: 169px;
+  min-height: 56px;
+  font-size: 16px;
+  color: $body-background-color;
+  background-color: $iris-color;
+  padding: 16px 32px;
+  border: none;
+  transition: background-color $hover-transition,
+    box-shadow $hover-transition;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: $ocean-color;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url('../images/hero/people-office-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url('../images/hero/people-office-tablet.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url('../images/hero/people-office-tablet@2x.jpg');
+    }
+  }
+
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url('../images/hero/people-office-desktop.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url('../images/hero/people-office-desktop@2x.jpg');
+    }
+  }
+}
+
+/* =============== HERO SECTION =============== */

@@ -1,0 +1,21 @@
+/* =============== DIRECTIONS SECTION =============== */
+/* =============== What Are We Doing =============== */
+.directions {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .directions {
+    padding-bottom: 120px;
+    display: flex;
+  }
+
+  .direction-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    gap: 24px;
+  }
+}
+
+/* =============== DIRECTIONS SECTION =============== */

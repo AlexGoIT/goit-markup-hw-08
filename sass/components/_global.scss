@@ -1,0 +1,60 @@
+/* ========== GLOBAL ========== */
+/* Part hidden */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Parts */
+.part-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+}
+
+/* =============== LINK =============== */
+.link {
+  text-decoration: none;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: color $hover-transition;
+}
+
+.link:hover,
+.link:focus {
+  color: $ocean-color;
+}
+
+.contacts {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.contact-link {
+  color: $slate-color;
+  transition: color $hover-transition;
+}
+/* =============== LINK =============== */
+/* ========== GLOBAL ========== */

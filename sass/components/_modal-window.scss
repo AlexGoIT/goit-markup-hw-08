@@ -1,0 +1,242 @@
+/* ==================== MODAL WINDOW ==================== */
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity $hover-transition,
+    visibility $hover-transition;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.order-service-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 392px;
+  padding: 72px 24px 24px;
+  background-color: $modal-background;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: box-shadow $hover-transition;
+}
+
+@media screen and (min-width: 768px) {
+  .order-service-wrapper {
+    width: 408px;
+  }
+}
+
+.order-service-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// .close-btn {
+//   width: 24px;
+//   height: 24px;
+//   border-radius: 50%;
+//   padding: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   position: absolute;
+//   background-color: var(--cornflower-color);
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   transition: background-color var(--hover-transition);
+// }
+
+.order-service-wrapper .close-btn {
+  top: 24px;
+  right: 24px;
+}
+
+// .close-btn:hover,
+// .close-btn:focus {
+//   background-color: var(--ocean-color);
+//   border: var(--ocean-color);
+// }
+
+// .close-btn-icon:hover,
+// .close-btn-icon:focus {
+//   transition: fill var(--hover-transition);
+// }
+
+// .close-btn:hover .close-btn-icon,
+// .close-btn:focus .close-btn-icon {
+//   fill: var(--body-background-color);
+// }
+
+.form-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $navy-blue-color;
+}
+
+.input-box {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: $light-slate-color;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.input-box:focus-within .form-input {
+  border-color: $accent-color;
+}
+
+.contact-input {
+  height: 40px;
+  padding-left: 38px;
+}
+
+.input-icon {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  fill: var(--navy-blue-color);
+}
+
+.input-icon {
+  transition: fill $hover-transition;
+}
+
+.input-box:focus-within .input-icon {
+  fill: $accent-color;
+}
+
+.comment-box {
+  margin-bottom: 16px;
+}
+
+.comment-input {
+  height: 120px;
+  padding: 8px 16px;
+  resize: none;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.private-policy-label {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+
+.check-box {
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.private-policy-label {
+  margin-left: 8px;
+}
+
+.checkbox-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.25px solid $navy-blue-color;
+  border-radius: 2px;
+  fill: none;
+  cursor: pointer;
+  transition: fill $hover-transition,
+    background-color $hover-transition, box-shadow $hover-transition;
+}
+
+.private-policy-check:focus+.checkbox-icon {
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #000000;
+}
+
+.private-policy-check:checked+.checkbox-icon {
+  border-color: transparent;
+  background-color: $ocean-color;
+  fill: $cloud-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.private-policy-link {
+  position: relative;
+  color: $accent-color;
+}
+
+.private-policy-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 1px;
+  border-bottom: 1px solid $accent-color;
+  transition: border-color $hover-transition;
+}
+
+.private-policy-link:hover::after,
+.private-policy-link:focus::after {
+  border-color: $ocean-color;
+}
+
+.form-send-btn {
+  padding: 16px 32px;
+  min-width: 169px;
+  min-height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: $body-background-color;
+  border: none;
+  background-color: $iris-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color $hover-transition;
+}
+
+.form-send-btn:hover,
+.form-send-btn:focus {
+  background-color: $ocean-color;
+}
+
+/* ==================== MODAL WINDOW ==================== */
