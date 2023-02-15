@@ -31,6 +31,11 @@
   transition: box-shadow $hover-transition;
 }
 
+@media screen and (max-width: 427px) {
+  .order-service-wrapper {
+    width: calc(100% - 40px);
+  }
+}
 @media screen and (min-width: 768px) {
   .order-service-wrapper {
     width: 408px;

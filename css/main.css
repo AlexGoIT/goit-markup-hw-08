@@ -1036,6 +1036,11 @@ button {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 427px) {
+  .order-service-wrapper {
+    width: calc(100% - 32px);
+  }
+}
 @media screen and (min-width: 768px) {
   .order-service-wrapper {
     width: 408px;
