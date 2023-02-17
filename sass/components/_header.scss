@@ -52,7 +52,9 @@
   border-radius: 2px;
   background-color: $ocean-color;
   pointer-events: none;
-  transition: background-color $hover-transition;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .nav-link:not(.nav-link-active)::after {
@@ -62,7 +64,9 @@
 .nav-link:not(.nav-link-active):hover::after,
 .nav-link:not(.nav-link-active):focus::after {
   background-color: $ocean-color;
-  transition: background-color $hover-transition;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 @media screen and (max-width: 767px) {

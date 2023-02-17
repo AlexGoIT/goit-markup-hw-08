@@ -39,7 +39,9 @@
   text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: color $hover-transition;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .link:hover,
@@ -54,7 +56,9 @@
 
 .contact-link {
   color: $slate-color;
-  transition: color $hover-transition;
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 /* =============== LINK =============== */
 /* ========== GLOBAL ========== */

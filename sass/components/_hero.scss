@@ -34,8 +34,9 @@
   background-color: $iris-color;
   padding: 16px 32px;
   border: none;
-  transition: background-color $hover-transition,
-    box-shadow $hover-transition;
+  transition-property: background-color, box-shadow;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .hero-btn:hover,

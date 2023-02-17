@@ -9,7 +9,9 @@
   position: absolute;
   background-color: $cornflower-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color $hover-transition;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .close-btn:hover,
@@ -20,7 +22,9 @@
 
 .close-btn-icon:hover,
 .close-btn-icon:focus {
-  transition: fill $hover-transition;
+  transition-property: fill;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .close-btn:hover .close-btn-icon,

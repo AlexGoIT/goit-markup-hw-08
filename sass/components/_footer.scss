@@ -45,7 +45,9 @@
 
 .footer-social-link {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color $hover-transition;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .footer-social-link:hover,
@@ -105,7 +107,9 @@
   color: $body-background-color;
   border-radius: 4px;
   background: $accent-color;
-  transition: background-color $hover-transition;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .subscribe-btn:hover,
