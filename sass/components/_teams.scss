@@ -37,7 +37,9 @@
 
 .team-social-link {
   background-color: $iris-color;
-  transition: background-color $hover-transition;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .team-social-link:hover,

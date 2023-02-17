@@ -1,13 +1,18 @@
+:root {
+    --transition-time: 250ms;
+    // --transition-time: 5s;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 $body-background-color: #ffffff;
-    $slate-color: #434455;
-    $navy-blue-color: #2e2f42;
-    $ocean-color: #404bbf;
-    $iris-color: #4d5ae5;
-    $cloud-color: #f4f4fd;
-    $cornflower-color: #e7e9fc;
-    $light-slate-color: #8e8f99;
-  
-    $accent-color: #4d5ae5;  /* Iris color */
-    $footer-social-link-active: #31d0aa;
-    $modal-background: #fcfcfc;
-    $hover-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$slate-color: #434455;
+$navy-blue-color: #2e2f42;
+$ocean-color: #404bbf;
+$iris-color: #4d5ae5;
+$cloud-color: #f4f4fd;
+$cornflower-color: #e7e9fc;
+$light-slate-color: #8e8f99;  
+$accent-color: #4d5ae5;  /* Iris color */
+$footer-social-link-active: #31d0aa;
+$modal-background: #fcfcfc;
+$hover-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -28,7 +28,9 @@
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: box-shadow $hover-transition;
+  transition-property: box-shadow;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 @media screen and (max-width: 427px) {
@@ -48,41 +50,10 @@
   justify-content: center;
 }
 
-// .close-btn {
-//   width: 24px;
-//   height: 24px;
-//   border-radius: 50%;
-//   padding: 0;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   cursor: pointer;
-//   position: absolute;
-//   background-color: var(--cornflower-color);
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   transition: background-color var(--hover-transition);
-// }
-
 .order-service-wrapper .close-btn {
   top: 24px;
   right: 24px;
 }
-
-// .close-btn:hover,
-// .close-btn:focus {
-//   background-color: var(--ocean-color);
-//   border: var(--ocean-color);
-// }
-
-// .close-btn-icon:hover,
-// .close-btn-icon:focus {
-//   transition: fill var(--hover-transition);
-// }
-
-// .close-btn:hover .close-btn-icon,
-// .close-btn:focus .close-btn-icon {
-//   fill: var(--body-background-color);
-// }
 
 .form-title {
   margin-bottom: 16px;
@@ -114,7 +85,9 @@
   font-size: 18px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: border-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .input-box:focus-within .form-input {
@@ -131,10 +104,9 @@
   bottom: 8px;
   left: 16px;
   fill: var(--navy-blue-color);
-}
-
-.input-icon {
-  transition: fill $hover-transition;
+  transition-property: fill;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .input-box:focus-within .input-icon {
@@ -180,8 +152,9 @@
   border-radius: 2px;
   fill: none;
   cursor: pointer;
-  transition: fill $hover-transition,
-    background-color $hover-transition, box-shadow $hover-transition;
+  transition-property: fill, background-color, box-shadow;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .private-policy-check:focus+.checkbox-icon {
@@ -217,7 +190,9 @@
   left: 0;
   bottom: 1px;
   border-bottom: 1px solid $accent-color;
-  transition: border-color $hover-transition;
+  transition-property: border-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .private-policy-link:hover::after,
@@ -236,7 +211,9 @@
   border: none;
   background-color: $iris-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color $hover-transition;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
 }
 
 .form-send-btn:hover,
