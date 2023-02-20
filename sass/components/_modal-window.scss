@@ -7,8 +7,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity $hover-transition,
-    visibility $hover-transition;
+  transition: opacity $hover-transition, visibility $hover-transition;
 }
 
 .backdrop.is-hidden {
@@ -157,11 +156,11 @@
   transition-timing-function: var(--cubic);
 }
 
-.private-policy-check:focus+.checkbox-icon {
+.private-policy-check:focus + .checkbox-icon {
   box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #000000;
 }
 
-.private-policy-check:checked+.checkbox-icon {
+.private-policy-check:checked + .checkbox-icon {
   border-color: transparent;
   background-color: $ocean-color;
   fill: $cloud-color;

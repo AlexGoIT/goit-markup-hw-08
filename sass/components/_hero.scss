@@ -8,8 +8,10 @@
   background-size: cover;
   background-position: center;
   background-color: $navy-blue-color;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url('../images/hero/people-office-mobile.jpg');
   text-align: center;
 }
@@ -45,28 +47,34 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero/people-office-mobile@2x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero/people-office-tablet.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
         url('../images/hero/people-office-tablet@2x.jpg');
     }
   }
@@ -82,17 +90,21 @@ screen and (min-resolution: 2dppx) {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero/people-office-desktop.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
         url('../images/hero/people-office-desktop@2x.jpg');
     }
   }
