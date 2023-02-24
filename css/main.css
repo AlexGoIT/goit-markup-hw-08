@@ -1261,7 +1261,7 @@ button {
   fill: #f4f4fd;
 }
 
-.visually-hidden {
+.checkbox-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
