@@ -22,7 +22,7 @@
   margin-right: auto;
   margin-bottom: 72px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: $body-background-color;
@@ -44,6 +44,12 @@
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: $ocean-color;
+}
+
+@media screen and (min-width: 427px) {
+  .hero-title {
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
